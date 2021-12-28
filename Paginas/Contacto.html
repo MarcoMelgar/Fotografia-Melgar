@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos.css">
+    <title>4 Desafio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul type="circle">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./Nosotros.html">Nosotros</a></li>
+                <li><a href="./Servicios.html">Servicios</a></li>
+                <li><a href="./Portafolio.html">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <form class="main__form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+        <h2>Contacto</h2>
+        <label for="casilla1"> Nombre </label> 
+        <input type="text" required> <br>
+
+        <label for="casilla2">Email</label>
+        <input type="email"required><br>
+
+        <label for="casilla3">Telefono</label> 
+        <input type="text"><br>   
+
+        <label for="casilla4">Servicio</label>
+        <select name="Servicios">
+            <option>Retrato</option>
+            <option>Arquitectura</option>
+            <option>Evento</option>
+            <option>Articulos</option>
+            <option>Otros</option>
+        </select><br>
+
+        <label for="casilla5">Fecha</label>
+        <input type="date"><br>
+
+        <label for="casilla6"></label>  
+        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Dejanos tu comentario"></textarea><br>
+
+        <label for="casilla7">Aviso de privacidad</label>
+        <input type="checkbox"><br>
+
+        <label for="casilla8">Suscripción para promociones</label>  
+        <input type="checkbox"><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar"><br>
+    </form>
+    </main>
+    <footer>         
+        <a href="./Legal.html">Aviso de privacidad</a>
+    </footer>
+</body>
+
+</html>
